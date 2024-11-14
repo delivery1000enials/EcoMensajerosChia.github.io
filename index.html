@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMensajeros Chía</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <h1>EcoMensajeros Chía</h1>
+            <nav>
+                <ul>
+                    <li><a href="#vision">Visión</a></li>
+                    <li><a href="#mision">Misión</a></li>
+                    <li><a href="#formulario">Formulario de Recolección</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Visión -->
+    <section id="vision" class="section">
+        <div class="container">
+            <h2>Visión</h2>
+            <p>Ser la empresa líder en mensajería ecológica en Chía, promoviendo el uso de bicicletas eléctricas y convencionales para un transporte limpio y eficiente. Nuestro objetivo es brindar un servicio rápido, confiable y amigable con el medio ambiente, garantizando el bienestar social y ambiental en cada entrega.</p>
+        </div>
+    </section>
+
+    <!-- Sección Misión -->
+    <section id="mision" class="section">
+        <div class="container">
+            <h2>Misión</h2>
+            <p>En EcoMensajeros Chía, nos comprometemos a ofrecer servicios de mensajería express, utilizando transporte sostenible para reducir la huella de carbono. Trabajamos para mejorar la calidad de vida en nuestra comunidad, colaborando con iniciativas locales y ofreciendo soluciones rápidas y efectivas para la entrega de paquetes.</p>
+        </div>
+    </section>
+
+    <!-- Sección Formulario de Recolección -->
+    <section id="formulario" class="section">
+        <div class="container">
+            <h2>Formulario de Recolección de Paquetes</h2>
+            <form id="recoleccionForm" action="https://formsubmit.co/delivery1000enials@gmail.com" method="POST" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="nombreRemitente">Nombre del Remitente:</label>
+                    <input type="text" id="nombreRemitente" name="nombreRemitente" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefonoRemitente">Teléfono del Remitente:</label>
+                    <input type="text" id="telefonoRemitente" name="telefonoRemitente" required>
+                </div>
+                <div class="form-group">
+                    <label for="direccionRecogida">Dirección de Recogida:</label>
+                    <input type="text" id="direccionRecogida" name="direccionRecogida" required>
+                </div>
+                <div class="form-group">
+                    <label for="nombreDestinatario">Nombre del Destinatario:</label>
+                    <input type="text" id="nombreDestinatario" name="nombreDestinatario" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefonoDestinatario">Teléfono del Destinatario:</label>
+                    <input type="text" id="telefonoDestinatario" name="telefonoDestinatario" required>
+                </div>
+                <div class="form-group">
+                    <label for="direccionEntrega">Dirección de Entrega:</label>
+                    <input type="text" id="direccionEntrega" name="direccionEntrega" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionPaquete">Descripción del Paquete:</label>
+                    <textarea id="descripcionPaquete" name="descripcionPaquete" required></textarea>
+                </div>
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 EcoMensajeros Chía | Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Script de validación -->
+    <script src="script.js"></script>
+</body>
+</html>
